@@ -22,3 +22,16 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# vscode setting folder
+.vscode/
+
+# misc
+.DS_Store 
+
+# local env files
+.env.local
+.env.*.local  
+
+# vercel
+.vercel
