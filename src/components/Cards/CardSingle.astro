@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  color: string;
+}
+
+const { title, description, image, color } = Astro.props;
+
+let modifiedColor = color;
+if (color === "amarillo") {
+  modifiedColor = "#fdfe7c";
+}
+if (color === "lima") {
+  modifiedColor = "#9bc385";
+}
+if (color === "bagie") {
+  modifiedColor = "#b48271";
+}
+---
+
+<div
+  class="w-[292px] h-[444px]"
+  style={`background-color: ${modifiedColor}; border-radius: 46px;`}>
+  <article class="flex flex-col items-start gap-9 px-8 py-12">
+    <h2 class="text-xl font-bold break-words uppercase w-44">{title}</h2>
+    <img
+      class="w-[175px] h-[140px] object-contain object-left"
+      src={image}
+      alt="figure 1"
+    />
+    <p>{description}</p>
+  </article>
+</div>

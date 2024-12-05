@@ -1,12 +1,13 @@
 ---
 import Buttom from "../components/Buttom.astro";
+import CardSingle from "../components/Cards/CardSingle.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="SSEO - Landing Page">
   <main class="max-w-screen-2xl h-auto">
     <section
-      class="w-full min-h-screen flex flex-col justify-center items-center m-auto gap-3">
+      class="w-full my-52 flex flex-col justify-center items-center m-auto gap-3">
       <img
         class="absolute top-[41%] right-1/4 h-[180px] w-[180px] -z-10"
         src="/public/img/Group 2.png"
@@ -24,6 +25,31 @@ import Layout from "../layouts/Layout.astro";
           which increase sales, maximize customer satifaction.
         </p>
         <Buttom title="see our all service" />
+      </article>
+    </section>
+
+    <section class="flex flex-col items-center gap-3 py-14">
+      <article class="flex gap-8 flex-wrap">
+        <CardSingle
+          title="seo consultancy"
+          description="from they fine john he give of rich he. they age and draw mrs like. improving and distrusts may instantly."
+          image="/img/Figure_2.png"
+          color="amarillo"
+        />
+        <div
+          class="w-[292px] h-[444px] bg-[#b48271] rounded-[46px] flex items-center">
+          <img
+            class="w-[281px] h-[342px]"
+            src="/img/Mockup_movil.png"
+            alt="figure 1"
+          />
+        </div>
+        <CardSingle
+          title="social marketing"
+          description="Lorem ipsum dolor sit amet consectetur. Tempus augue egestas vulputate egestas tristique sit."
+          image="/img/Figure_3.png"
+          color="lima"
+        />
       </article>
     </section>
   </main>
