@@ -1,26 +1,29 @@
 ---
 import Buttom from "../components/Buttom.astro";
 import CardSingle from "../components/Cards/CardSingle.astro";
+import CardBanner from "../components/Cards/CardBanner.astro";
+import NavBar from "../components/NavBar.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="SSEO - Landing Page">
-  <main class="max-w-screen-2xl h-auto">
+  <NavBar />
+  <main class="max-w-screen-2xl h-auto m-auto">
     <section
-      class="w-full my-52 flex flex-col justify-center items-center m-auto gap-3">
+      class="w-full my-36 flex flex-col justify-center items-center m-auto gap-6">
       <img
-        class="absolute top-[41%] right-1/4 h-[180px] w-[180px] -z-10"
-        src="/public/img/Group 2.png"
+        class="absolute top-[46.2%] right-[23%] h-[180px] w-[180px] -z-10"
+        src="/public/img/Figure_1.png"
         alt="figure 1"
       />
       <h1
-        class="text-6xl font-bold text-center text-negro uppercase flex flex-col items-center gap-2">
+        class="text-7xl font-bold text-center text-negro uppercase flex flex-col items-center gap-2">
         <p>i think your</p>
         <p>business find seo</p>
         <p>solution...</p>
       </h1>
       <article class="-ml-[25px] flex flex-col items-start gap-3">
-        <p class="max-w-80 py-1 uppercase text-balance text-xs">
+        <p class="max-w-80 py-1 uppercase text-balance text-[14px]">
           we create a cusomized approach for businesses in various industries
           which increase sales, maximize customer satifaction.
         </p>
@@ -28,8 +31,11 @@ import Layout from "../layouts/Layout.astro";
       </article>
     </section>
 
-    <section class="flex flex-col items-center gap-3 py-14">
-      <article class="flex gap-8 flex-wrap">
+    <section
+      class="flex content-center justify-center items-center gap-3 py-14">
+      <article
+        class="flex gap-8 flex-wrap content-center justify-center"
+        id="services">
         <CardSingle
           title="seo consultancy"
           description="from they fine john he give of rich he. they age and draw mrs like. improving and distrusts may instantly."
@@ -51,6 +57,27 @@ import Layout from "../layouts/Layout.astro";
           color="lima"
         />
       </article>
+    </section>
+
+    <section
+      class="w-full h-[771px] relative m-a flex flex-col items-center gap-12 px-10 py-28">
+      <article class="flex justify-center content-center gap-6">
+        <h3 class="text-xs font-semibold uppercase w-fit" id="about">
+          About us
+        </h3>
+        <h2 class="-mt-5">
+          <p class="text-[62px] font-medium font-['Inter'] uppercase">
+            lead your
+          </p>
+          <p
+            class="text-[106px] font-semibold font-['Inter'] uppercase leading-[104.52px]">
+            Business to
+            <br />
+            growth
+          </p>
+        </h2>
+      </article>
+      <CardBanner />
     </section>
   </main>
 </Layout>
