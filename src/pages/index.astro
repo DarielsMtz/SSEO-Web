@@ -66,18 +66,27 @@ import Layout from "../layouts/Layout.astro";
           About us
         </h3>
         <h2 class="-mt-5">
-          <p class="text-[62px] font-medium font-['Inter'] uppercase">
-            lead your
-          </p>
-          <p
-            class="text-[106px] font-semibold font-['Inter'] uppercase leading-[104.52px]">
+          <p class="text-[62px] font-medium uppercase">lead your</p>
+          <p class="text-[106px] font-semibold uppercase leading-[104.52px]">
             Business to
             <br />
             growth
           </p>
         </h2>
       </article>
-      <CardBanner />
+
+      <CardBanner>
+        <section slot="grafico">
+          <div class="w-[276.44px] h-[314px] left-[18px] top-[42px] absolute">
+            <div
+              class="w-[182.12px] h-[222.44px] left-[101.10px] top-[49.26px] absolute origin-top-left rotate-[15.69deg] bg-white rounded-[32px]">
+            </div>
+            <div
+              class="w-[182.12px] h-[222.44px] left-[55.10px] top-0 absolute origin-top-left rotate-[15.69deg] bg-[#6dbacc] rounded-[32px]">
+            </div>
+          </div>
+        </section>
+      </CardBanner>
     </section>
   </main>
 </Layout>
